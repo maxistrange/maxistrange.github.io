@@ -1,12 +1,4 @@
-/* Grundlegendes CSS für die Webseite */
-/*Test */
-@font-face {
-    font-family: 'Futura';
-    src: local('Futura'), url('https://fonts.cdnfonts.com/s/78341/FuturaBT-Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+/* Einbinden von Futura */
 @font-face {
     font-family: 'Futura';
     src: local('Futura'), url('https://fonts.cdnfonts.com/s/78341/FuturaBT-Light.woff') format('woff');
@@ -30,6 +22,8 @@ header {
 h1 {
     font-size: 3rem;
     text-transform: uppercase;
+    font-family: 'Futura', sans-serif;
+    font-weight: normal;
 }
 
 .video iframe {
