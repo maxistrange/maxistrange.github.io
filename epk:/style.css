@@ -1,0 +1,65 @@
+/* Einbinden von Futura */
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura'), url('https://fonts.cdnfonts.com/s/78341/FuturaBT-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Futura', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Futura', sans-serif;
+    font-weight: normal;
+}
+
+.video iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+.image {
+    text-align: center;
+    margin: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-block, .downloads, .text-split, .spotify {
+    padding: 20px;
+    text-align: center;
+}
+
+.text-split .bar {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 80%;
+    border: 1px solid white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 10px;
+}
