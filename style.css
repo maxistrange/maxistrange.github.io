@@ -7,6 +7,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura'), url('https://fonts.cdnfonts.com/s/78341/FuturaBT-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Futura', sans-serif;
     background-color: #000;
