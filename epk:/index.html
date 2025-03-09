@@ -14,14 +14,73 @@
         <h1>MAXI STRANGE</h1>
     </header>
 
+
     <section class="video">
-        <iframe width="100%" height="500" src="https://www.youtube.com/embed/cak5Btr_Y6k?playlist=cak5Btr_Y6k&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/videoseries?si=o48x_hTjFuWojgg0&amp;list=PLLdX1nwLYNSzYDpGpxnxMqAu_ywMici4J&loop=1&autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
     </section>
 
     <section class="text-block">
         <h2>Lasst uns was starten!</h2>
         <p>Ob im Club, im Wohnzimmer oder auf der Freilichtbühne. Maxi Strange bietet dort dramatische Rock-Darbietungen. Als nächstes sucht er euch, um zusammen einen Konzertabend zu starten! Auf dieser Seite könnt ihr euch einen Eindruck verschaffen und relevante Materialien runterladen.</p>
     </section>
+
+    <!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <!-- <img class="slide active" src="IMG/Slideshow/1.jpg" alt="Bild 1"> -->
+    <img class="slide active" src="IMG/Slideshow/2.jpg" alt="Bild 2">
+    <img class="slide" src="IMG/Slideshow/3.jpg" alt="Bild 3">
+    <!-- <img class="slide" src="IMG/Slideshow/4.jpg" alt="Bild 4"> -->
+    <img class="slide" src="IMG/Slideshow/5.jpg" alt="Bild 5">
+
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+
+<div class="dots">
+    <!-- <span class="dot active" onclick="setSlide(0)"></span> -->
+    <span class="dot active" onclick="setSlide(1)"></span>
+    <span class="dot" onclick="setSlide(2)"></span>
+    <!-- <span class="dot" onclick="setSlide(3)"></span> -->
+    <span class="dot" onclick="setSlide(4)"></span>
+</div>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+    const dots = document.querySelectorAll(".dot");
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove("active"));
+        dots.forEach(dot => dot.classList.remove("active"));
+
+        slides[index].classList.add("active");
+        dots[index].classList.add("active");
+    }
+
+    function changeSlide(step) {
+        currentSlide = (currentSlide + step + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function setSlide(index) {
+        currentSlide = index;
+        showSlide(index);
+    }
+
+    setInterval(() => changeSlide(1), 2000); // Automatischer Wechsel alle 3 Sekunden
+</script>
+
+</body>
+</html>
+
 
     <section class="image">
         <img class="img" src="IMG/1.jpg" alt="MAXI STRANGE Image">
