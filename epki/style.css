@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura'), url('https://fonts.cdnfonts.com/s/78341/FuturaBT-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Futura', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+header.visible {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Futura', sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Futura', sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Blockiert Klicks standardmäßig */
+}
+
+.video-container.active iframe {
+    pointer-events: auto; /* Aktiviert das Video nach Klick */
+}
+}
+
+.image {
+    text-align: center;
+    margin: 20px;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-block, .downloads, .text-split, .spotify {
+    padding: 20px;
+    text-align: center;
+}
+
+.text-split .bar {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 80%;
+    border: 1px solid white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 90%;
+    height: 600px; /* Oder eine passende Höhe je nach Bildern */
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.slide.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active { background-color: white; }
+
+a {
+    color: rgb(255, 255, 131);
+    text-decoration: none;
+}
