@@ -1,0 +1,142 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('https://fonts.cdnfonts.com/s/78341/FuturaBT-Light.woff') format('woff');
+}
+
+body {
+    font-family: 'Futura', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    opacity: 1;
+}
+
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Futura', sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Futura', sans-serif;
+}
+
+.video iframe {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+}
+
+.song {
+    margin: 30px 0;
+}
+
+.album-cover {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-cover img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.album-cover .color {
+    opacity: 0;
+}
+
+.album-cover:hover .color {
+    opacity: 1;
+}
+
+.download-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.download-text {
+    display: block;
+    margin-top: 10px;
+    color: yellow;
+    text-decoration: none;
+}
+
+.guestbook {
+    padding: 20px;
+}
+
+.guestbook form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.guestbook input, .guestbook textarea {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+}
+
+.guestbook button {
+    padding: 10px 20px;
+    border: none;
+    background: yellow;
+    cursor: pointer;
+}
+
+.guestbook-entries {
+    margin-top: 20px;
+}
+
+.entry {
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
